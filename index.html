@@ -19,34 +19,37 @@
 <header class="site-header">
   <a class="mark" href="#top">RM</a>
   <nav class="site-nav">
-    <a href="#about">profile</a>
-    <a href="#stack">stack</a>
-    <a href="#work">work</a>
-    <a href="#education">education</a>
+    <a href="#about" data-i18n="nav.about">profile</a>
+    <a href="#stack" data-i18n="nav.stack">stack</a>
+    <a href="#work" data-i18n="nav.work">work</a>
+    <a href="#education" data-i18n="nav.education">education</a>
   </nav>
   <a class="header-contact" href="mailto:rimel.morjane6@gmail.com">rimel.morjane6@gmail.com</a>
+  <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+    <span data-lang-opt="en">EN</span><span class="lang-sep">/</span><span data-lang-opt="fr">FR</span>
+  </button>
 </header>
 
 <main id="top">
 
   <section class="hero">
     <div class="hero-text">
-      <p class="kicker">software engineer · sousse, tunisia</p>
+      <p class="kicker" data-i18n="hero.kicker">software engineer · sousse, tunisia</p>
       <h1>Rimel <span class="grad-text">Morjane</span></h1>
-      <p class="hero-lede">
+      <p class="hero-lede" data-i18n="hero.lede">
         I build responsive, high‑performance web applications with React, Laravel
         and Filament — from long‑running e‑commerce platforms to internal tools
         that replace manual work with something people actually enjoy using.
       </p>
       <div class="hero-facts">
-        <span>4 years, Satoripop</span>
+        <span data-i18n="hero.fact1">4 years, Satoripop</span>
         <span>React · Laravel · Filament</span>
         <span>GraphQL · Apollo · REST</span>
       </div>
       <div class="hero-links">
         <a href="https://github.com/RimelMj" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/rimel-morjane-b815bb1ba" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:rimel.morjane6@gmail.com">Email</a>
+        <a href="mailto:rimel.morjane6@gmail.com" data-i18n="hero.email">Email</a>
       </div>
     </div>
 
@@ -69,7 +72,7 @@
   <section id="about" class="section reveal">
     <div class="section-label"><span class="path">profile.md</span></div>
     <div class="section-body">
-      <p class="lede-block">
+      <p class="lede-block" data-i18n="about.lede">
         Software engineer with 4 years of experience building responsive,
         high‑performance web applications with React, Laravel, and Filament.
         Skilled in integrating REST and GraphQL APIs, optimizing UI/UX, and
@@ -78,10 +81,10 @@
         polished, scalable products.
       </p>
       <dl class="about-grid">
-        <div><dt>Location</dt><dd>Hammam Sousse, Tunisia</dd></div>
-        <div><dt>Languages spoken</dt><dd>Arabic (native), French, English</dd></div>
-        <div><dt>Education</dt><dd>Engineering Degree, Software Engineering — Esprit</dd></div>
-        <div><dt>Currently</dt><dd>Software Engineer at Satoripop</dd></div>
+        <div><dt data-i18n="about.dtLocation">Location</dt><dd data-i18n="about.ddLocation">Hammam Sousse, Tunisia</dd></div>
+        <div><dt data-i18n="about.dtLanguages">Languages spoken</dt><dd data-i18n="about.ddLanguages">Arabic (native), French, English</dd></div>
+        <div><dt data-i18n="about.dtEducation">Education</dt><dd data-i18n="about.ddEducation">Engineering Degree, Software Engineering — Esprit</dd></div>
+        <div><dt data-i18n="about.dtCurrently">Currently</dt><dd data-i18n="about.ddCurrently">Software Engineer at Satoripop</dd></div>
       </dl>
     </div>
   </section>
@@ -90,33 +93,33 @@
     <div class="section-label"><span class="path">stack/</span></div>
     <div class="section-body stack-grid">
       <div class="stack-group" data-hue="blue">
-        <h3>languages &amp; frameworks</h3>
+        <h3 data-i18n="stack.groupLangFrameworks">languages &amp; frameworks</h3>
         <ul class="chips">
           <li>JavaScript</li><li>React.js</li><li>Laravel (PHP)</li><li>Filament</li>
         </ul>
       </div>
       <div class="stack-group" data-hue="coral">
-        <h3>styling &amp; markup</h3>
+        <h3 data-i18n="stack.groupStyling">styling &amp; markup</h3>
         <ul class="chips">
           <li>SASS</li><li>Tailwind CSS</li><li>HTML5</li><li>CSS3</li>
         </ul>
       </div>
       <div class="stack-group" data-hue="violet">
-        <h3>APIs &amp; data</h3>
+        <h3 data-i18n="stack.groupApis">APIs &amp; data</h3>
         <ul class="chips">
           <li>GraphQL</li><li>Apollo Client</li><li>REST</li>
         </ul>
       </div>
       <div class="stack-group" data-hue="mint">
-        <h3>tools</h3>
+        <h3 data-i18n="stack.groupTools">tools</h3>
         <ul class="chips">
           <li>Git</li><li>Laragon</li>
         </ul>
       </div>
       <div class="stack-group" data-hue="amber">
-        <h3>spoken languages</h3>
+        <h3 data-i18n="stack.groupSpoken">spoken languages</h3>
         <ul class="chips">
-          <li>Arabic — native</li><li>French</li><li>English</li>
+          <li data-i18n="stack.chipArabic">Arabic — native</li><li data-i18n="stack.chipFrench">French</li><li data-i18n="stack.chipEnglish">English</li>
         </ul>
       </div>
     </div>
@@ -128,10 +131,10 @@
 
       <div class="role-block">
         <div class="role-head">
-          <h3>Satoripop <span class="role-title">— Software Engineer</span></h3>
-          <p class="role-meta">Sousse, Tunisia · Feb 2022 – Present</p>
+          <h3>Satoripop <span class="role-title" data-i18n="work.roleTitle">— Software Engineer</span></h3>
+          <p class="role-meta" data-i18n="work.roleMeta">Sousse, Tunisia · Feb 2022 – Present</p>
         </div>
-        <p class="role-summary">
+        <p class="role-summary" data-i18n="work.roleSummary">
           Delivered frontend and full‑stack solutions across multiple client
           engagements, from long‑term maintenance to new build projects.
         </p>
@@ -140,11 +143,11 @@
           <li class="tl-item" data-hue="blue">
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
-              <h4>OECT — Ordre des Experts Comptables de Tunisie <span class="tag">in development</span></h4>
-              <p class="tl-meta">Corporate platform rebuild</p>
+              <h4>OECT — Ordre des Experts Comptables de Tunisie <span class="tag" data-i18n="work.oectTag">in development</span></h4>
+              <p class="tl-meta" data-i18n="work.oectMeta">Corporate platform rebuild</p>
               <ul>
-                <li>Rebuilding the website for the OECT — Tunisia's national professional body for chartered accountants — from the ground up in Laravel Filament.</li>
-                <li>Replacing a legacy platform with a maintainable architecture and a responsive, accessible interface, ahead of an upcoming launch.</li>
+                <li data-i18n="work.oectB1">Rebuilding the website for the OECT — Tunisia's national professional body for chartered accountants — from the ground up in Laravel Filament.</li>
+                <li data-i18n="work.oectB2">Replacing a legacy platform with a maintainable architecture and a responsive, accessible interface, ahead of an upcoming launch.</li>
               </ul>
             </div>
           </li>
@@ -152,12 +155,12 @@
           <li class="tl-item" data-hue="coral">
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
-              <h4>Carrefour Tunisie <span class="tag">~3‑year engagement</span></h4>
-              <p class="tl-meta">E‑commerce platform — Venia (PWA Studio)</p>
+              <h4>Carrefour Tunisie <span class="tag" data-i18n="work.carrefourTag">~3‑year engagement</span></h4>
+              <p class="tl-meta" data-i18n="work.carrefourMeta">E‑commerce platform — Venia (PWA Studio)</p>
               <ul>
-                <li>Delivered continuous feature development and production maintenance for the Venia (PWA Studio) storefront in React, consuming GraphQL APIs through Apollo Client.</li>
-                <li>Optimized frontend performance and UX through query batching, lazy loading, and component refactoring.</li>
-                <li>Collaborated closely with backend and design teams to ship new storefront features and resolve live production issues, keeping the platform stable and current.</li>
+                <li data-i18n="work.carrefourB1">Delivered continuous feature development and production maintenance for the Venia (PWA Studio) storefront in React, consuming GraphQL APIs through Apollo Client.</li>
+                <li data-i18n="work.carrefourB2">Optimized frontend performance and UX through query batching, lazy loading, and component refactoring.</li>
+                <li data-i18n="work.carrefourB3">Collaborated closely with backend and design teams to ship new storefront features and resolve live production issues, keeping the platform stable and current.</li>
               </ul>
             </div>
           </li>
@@ -166,10 +169,10 @@
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
               <h4>Attunea</h4>
-              <p class="tl-meta">Internal company management platform</p>
+              <p class="tl-meta" data-i18n="work.attuneaMeta">Internal company management platform</p>
               <ul>
-                <li>Developed core modules — meeting scheduling, project and task management, document organization, routines, and calendar integration — using Laravel Filament.</li>
-                <li>Streamlined day‑to‑day operations for internal teams by automating manual, repetitive workflows across the platform.</li>
+                <li data-i18n="work.attuneaB1">Developed core modules — meeting scheduling, project and task management, document organization, routines, and calendar integration — using Laravel Filament.</li>
+                <li data-i18n="work.attuneaB2">Streamlined day‑to‑day operations for internal teams by automating manual, repetitive workflows across the platform.</li>
               </ul>
             </div>
           </li>
@@ -178,10 +181,10 @@
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
               <h4>GCER Tunisie &amp; Wifak Bank</h4>
-              <p class="tl-meta">Corporate websites</p>
+              <p class="tl-meta" data-i18n="work.gcerMeta">Corporate websites</p>
               <ul>
-                <li>Built responsive, accessible interfaces in Laravel and Filament with seamless frontend–backend integration.</li>
-                <li>Delivered polished corporate websites with a focus on cross‑device consistency and maintainable, reusable components.</li>
+                <li data-i18n="work.gcerB1">Built responsive, accessible interfaces in Laravel and Filament with seamless frontend–backend integration.</li>
+                <li data-i18n="work.gcerB2">Delivered polished corporate websites with a focus on cross‑device consistency and maintainable, reusable components.</li>
               </ul>
             </div>
           </li>
@@ -195,8 +198,8 @@
       <div class="section-label"><span class="path">education.md</span></div>
       <div class="section-body">
         <h3>Esprit</h3>
-        <p class="role-meta">Engineering Degree, Software Engineering · 2018 – 2021</p>
-        <p>Relevant coursework: Web Development, Data Science, Machine Learning.</p>
+        <p class="role-meta" data-i18n="edu.meta">Engineering Degree, Software Engineering · 2018 – 2021</p>
+        <p data-i18n="edu.coursework">Relevant coursework: Web Development, Data Science, Machine Learning.</p>
       </div>
     </div>
     <div class="split-col">
@@ -217,7 +220,7 @@
 
 <footer class="site-footer reveal" id="contact">
   <div class="footer-main">
-    <h2>Let's build something that ships.</h2>
+    <h2 data-i18n="footer.heading">Let's build something that ships.</h2>
     <a class="footer-email" href="mailto:rimel.morjane6@gmail.com">rimel.morjane6@gmail.com</a>
   </div>
   <div class="footer-links">
@@ -225,7 +228,7 @@
     <a href="https://github.com/RimelMj" target="_blank" rel="noopener">github.com/RimelMj</a>
     <a href="https://www.linkedin.com/in/rimel-morjane-b815bb1ba" target="_blank" rel="noopener">linkedin.com/in/rimel-morjane</a>
   </div>
-  <p class="footer-note">Hammam Sousse, Tunisia</p>
+  <p class="footer-note" data-i18n="footer.note">Hammam Sousse, Tunisia</p>
 </footer>
 
 <script src="script.js"></script>

@@ -170,6 +170,24 @@ a { color: inherit; }
 
 .header-contact:hover { color: var(--coral); }
 
+.lang-switch {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.lang-switch:hover, .lang-switch:focus-visible { border-color: var(--coral); }
+
+.lang-switch [data-lang-opt] { transition: color 0.2s ease, font-weight 0.2s ease; }
+.lang-switch [data-lang-opt].is-active { color: var(--ink); font-weight: 600; }
+.lang-switch .lang-sep { margin: 0 3px; color: var(--rule); }
+
 @media (max-width: 720px) {
   .site-nav, .header-contact { display: none; }
 }
