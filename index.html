@@ -5,6 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rimel Morjane — Software Engineer</title>
 <meta name="description" content="Rimel Morjane, software engineer building responsive web applications with React, Laravel and Filament.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0E0F14">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rimel Morjane — Software Engineer">
+<meta property="og:description" content="Software engineer with 4 years of experience building responsive, high-performance web applications with React, Laravel and Filament.">
+<meta property="og:url" content="https://rimelmj.github.io/portfolio/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rimel Morjane — Software Engineer">
+<meta name="twitter:description" content="Software engineer with 4 years of experience building responsive, high-performance web applications with React, Laravel and Filament.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rimel Morjane",
+  "jobTitle": "Software Engineer",
+  "url": "https://rimelmj.github.io/portfolio/",
+  "email": "mailto:rimel.morjane6@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Sousse", "addressCountry": "TN" },
+  "sameAs": ["https://github.com/RimelMj", "https://www.linkedin.com/in/rimel-morjane-b815bb1ba"]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -28,7 +52,18 @@
   <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
     <span data-lang-opt="en">EN</span><span class="lang-sep">/</span><span data-lang-opt="fr">FR</span>
   </button>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span><span></span>
+  </button>
 </header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#about" data-i18n="nav.about">profile</a>
+  <a href="#stack" data-i18n="nav.stack">stack</a>
+  <a href="#work" data-i18n="nav.work">work</a>
+  <a href="#education" data-i18n="nav.education">education</a>
+  <a href="mailto:rimel.morjane6@gmail.com">rimel.morjane6@gmail.com</a>
+</nav>
 
 <main id="top">
 
@@ -143,7 +178,7 @@
           <li class="tl-item" data-hue="blue">
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
-              <h4>OECT — Ordre des Experts Comptables de Tunisie <span class="tag" data-i18n="work.oectTag">in development</span></h4>
+              <h4><a class="tl-link" href="https://oect.org.tn/" target="_blank" rel="noopener">OECT — Ordre des Experts Comptables de Tunisie</a> <span class="tag" data-i18n="work.oectTag">in development</span></h4>
               <p class="tl-meta" data-i18n="work.oectMeta">Corporate platform rebuild</p>
               <ul>
                 <li data-i18n="work.oectB1">Rebuilding the website for the OECT — Tunisia's national professional body for chartered accountants — from the ground up in Laravel Filament.</li>
@@ -155,7 +190,7 @@
           <li class="tl-item" data-hue="coral">
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
-              <h4>Carrefour Tunisie <span class="tag" data-i18n="work.carrefourTag">~3‑year engagement</span></h4>
+              <h4><a class="tl-link" href="https://carrefour.tn" target="_blank" rel="noopener">Carrefour Tunisie</a> <span class="tag" data-i18n="work.carrefourTag">~3‑year engagement</span></h4>
               <p class="tl-meta" data-i18n="work.carrefourMeta">E‑commerce platform — Venia (PWA Studio)</p>
               <ul>
                 <li data-i18n="work.carrefourB1">Delivered continuous feature development and production maintenance for the Venia (PWA Studio) storefront in React, consuming GraphQL APIs through Apollo Client.</li>
@@ -168,7 +203,7 @@
           <li class="tl-item" data-hue="violet">
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
-              <h4>Attunea</h4>
+              <h4><a class="tl-link" href="https://attunea.com" target="_blank" rel="noopener">Attunea</a></h4>
               <p class="tl-meta" data-i18n="work.attuneaMeta">Internal company management platform</p>
               <ul>
                 <li data-i18n="work.attuneaB1">Developed core modules — meeting scheduling, project and task management, document organization, routines, and calendar integration — using Laravel Filament.</li>
@@ -180,7 +215,7 @@
           <li class="tl-item" data-hue="mint">
             <span class="tl-marker" aria-hidden="true"></span>
             <div class="tl-content">
-              <h4>GCER Tunisie &amp; Wifak Bank</h4>
+              <h4><a class="tl-link" href="https://gcertunisie.com/fr" target="_blank" rel="noopener">GCER Tunisie</a> &amp; <a class="tl-link" href="https://www.wifakbank.com/" target="_blank" rel="noopener">Wifak Bank</a></h4>
               <p class="tl-meta" data-i18n="work.gcerMeta">Corporate websites</p>
               <ul>
                 <li data-i18n="work.gcerB1">Built responsive, accessible interfaces in Laravel and Filament with seamless frontend–backend integration.</li>

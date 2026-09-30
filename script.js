@@ -1,3 +1,22 @@
+// Mobile hamburger nav.
+(function () {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mobileNav');
+  if (!toggle || !nav) return;
+
+  const close = () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+})();
+
 // Language switcher (EN / FR).
 (function () {
   const translations = {

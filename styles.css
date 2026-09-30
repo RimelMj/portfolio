@@ -189,8 +189,61 @@ a { color: inherit; }
 .lang-switch [data-lang-opt].is-active { color: var(--ink); font-weight: 600; }
 .lang-switch .lang-sep { margin: 0 3px; color: var(--rule); }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 32px;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 7px;
+  padding: 0 7px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  z-index: 99;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  padding: 8px var(--gutter) 4px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.mobile-nav.open { max-height: 320px; }
+
+.mobile-nav a {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--rule);
+}
+.mobile-nav a:last-child { border-bottom: none; }
+.mobile-nav a:hover { color: var(--coral); }
+
 @media (max-width: 720px) {
   .site-nav, .header-contact { display: none; }
+  .menu-toggle { display: flex; }
+  .mobile-nav { display: flex; }
 }
 
 /* hero */
@@ -546,6 +599,26 @@ a { color: inherit; }
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+}
+
+.tl-link {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.tl-link:hover, .tl-link:focus-visible {
+  color: var(--hue, var(--coral));
+  border-color: var(--hue, var(--coral));
+}
+
+.tl-link::after {
+  content: "↗";
+  display: inline-block;
+  font-size: 0.75em;
+  margin-left: 3px;
+  opacity: 0.6;
 }
 
 .tag {
